@@ -1,4 +1,4 @@
-![CustomRecipe Logo](images/customrecipe-logo.jpg)
+![CustomRecipe Logo](images/customrecipe-logo.png)
 
 ## Compatibility
 
