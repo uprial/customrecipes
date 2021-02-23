@@ -1,4 +1,4 @@
-package com.gmail.uprial.customrecipe.common;
+package com.gmail.uprial.customrecipes.common;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;

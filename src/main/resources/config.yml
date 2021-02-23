@@ -1,6 +1,11 @@
 #
 # ==== General info ====
 #
+# * If a field have default value then the definition may be skipped.
+#
+# * You can add your own recipes in this file but don't forget to
+# add they into 'enabled-recipes' list
+#
 # * After editing of this file you need to check server logs to be
 # sure that no errors was appeared.
 #
@@ -12,7 +17,52 @@
 #
 debug: false
 
+
+# List of keys of enabled recipes
+# <recipe-key1>
+# ...
+# <recipe-keyN>
+enabled-recipes:
+  - PigSpawner
+  - CreeperSpawnEgg
+
+
 #
-# Enable main features. Possible values: true | false (default = false)
+# ==== Recipes definition ====
+# Example:
 #
-enabled: true
+# <recipe-key>:
+#   name: <String>
+#   description: (default = empty)
+#     - <String1>
+#     ...
+#     - <StringN>
+#   recipe: (see https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html)
+#     - <BlockId11> <BlockId12> <BlockId13>
+#     - <BlockId21> <BlockId22> <BlockId23>
+#     - <BlockId31> <BlockId32> <BlockId33>
+#   item: ### target item in recipe result
+#   amount: <1..64> ### target amount of items in recipe result (default = 1)
+#
+
+PigSpawner:
+  name: "Pig Spawner"
+  description:
+    - "The pig can be changed"
+    - "by using a mob spawn egg"
+    - "on the block."
+  recipe:
+    - IRON_BLOCK PORKCHOP IRON_BLOCK
+    - PORKCHOP CLOCK PORKCHOP
+    - IRON_BLOCK PORKCHOP IRON_BLOCK
+  material: SPAWNER
+  amount: 1
+
+CreeperSpawnEgg:
+  name: "Creeper Spawn Egg"
+  recipe:
+    - GUNPOWDER GUNPOWDER GUNPOWDER
+    - GUNPOWDER EGG GUNPOWDER
+    - GUNPOWDER GUNPOWDER GUNPOWDER
+  material: CREEPER_SPAWN_EGG
+  amount: 2

@@ -1,17 +1,17 @@
-package com.gmail.uprial.customrecipe;
+package com.gmail.uprial.customrecipes;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
-import com.gmail.uprial.customrecipe.common.CustomLogger;
+import com.gmail.uprial.customrecipes.common.CustomLogger;
 
-class CustomRecipeCommandExecutor implements CommandExecutor {
-    public static final String COMMAND_NS = "customrecipe";
+class CustomRecipesCommandExecutor implements CommandExecutor {
+    public static final String COMMAND_NS = "customrecipes";
 
-    private final CustomRecipe plugin;
+    private final CustomRecipes plugin;
 
-    CustomRecipeCommandExecutor(CustomRecipe plugin) {
+    CustomRecipesCommandExecutor(CustomRecipes plugin) {
         this.plugin = plugin;
     }
 
@@ -23,12 +23,12 @@ class CustomRecipeCommandExecutor implements CommandExecutor {
             if((args.length >= 1) && (args[0].equalsIgnoreCase("reload"))) {
                 if (sender.hasPermission(COMMAND_NS + ".reload")) {
                     plugin.reloadConfig(customLogger);
-                    customLogger.info("CustomRecipe config reloaded.");
+                    customLogger.info("CustomRecipes config reloaded.");
                     return true;
                 }
             }
             else if((args.length == 0) || (args[0].equalsIgnoreCase("help"))) {
-                String helpString = "==== CustomRecipe help ====\n";
+                String helpString = "==== CustomRecipes help ====\n";
 
                 if (sender.hasPermission(COMMAND_NS + ".reload")) {
                     helpString += '/' + COMMAND_NS + " reload - reload config from disk\n";

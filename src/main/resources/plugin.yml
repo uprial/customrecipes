@@ -1,14 +1,14 @@
-name: CustomRecipe
-main: com.gmail.uprial.customrecipe.CustomRecipe
+name: CustomRecipes
+main: com.gmail.uprial.customrecipes.CustomRecipes
 version: 0.1.0
 api-version: 1.14
 commands:
-   customrecipe:
-      description: Reload CustomRecipe config
-      usage: /customrecipe help
+   customrecipes:
+      description: Reload CustomRecipes config
+      usage: /customrecipes help
       permission:
       permission-message:
 permissions:
-  customrecipe.reload:
-        description: Gives access to CustomRecipe 'reload' command
+  customrecipes.reload:
+        description: Gives access to CustomRecipes 'reload' command
         default: op

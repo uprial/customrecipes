@@ -1,4 +1,4 @@
-![CustomRecipe Logo](images/customrecipe-logo.png)
+![CustomRecipes Logo](images/customrecipes-logo.png)
 
 ## Compatibility
 
@@ -10,12 +10,12 @@ A Minecraft (Bukkit) plugin that allows creating custom recipes
 
 ## Commands
 
-`customrecipe reload` - reload config from disk
+`customrecipes reload` - reload config from disk
 
 ## Permissions
 
 * Access to 'reload' command:
-`customrecipe.reload` (default: op)
+`customrecipes.reload` (default: op)
 
 ## Configuration
 [Default configuration file](src/main/resources/config.yml)
@@ -24,7 +24,7 @@ A Minecraft (Bukkit) plugin that allows creating custom recipes
 I will be happy to add some features or fix bugs. My mail: uprial@gmail.com.
 
 ## Useful links
-* [Project on GitHub](https://github.com/uprial/customrecipe/)
+* [Project on GitHub](https://github.com/uprial/customrecipes/)
 * [Project on Bukkit Dev](TBD)
 * [Project on Spigot](TBD)
 
