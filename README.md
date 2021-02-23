@@ -8,6 +8,23 @@ Tested on Spigot-1.16.
 
 A Minecraft (Bukkit) plugin that allows creating custom recipes
 
+## Features
+
+![Blaze](https://raw.githubusercontent.com/uprial/customrecipes/master/images/blaze_spawn_egg.png)
+![Creeper](https://raw.githubusercontent.com/uprial/customrecipes/master/images/creeper_spawn_egg.png)
+![Drowned](https://raw.githubusercontent.com/uprial/customrecipes/master/images/drowned_spawn_egg.png)
+![Enderman](https://raw.githubusercontent.com/uprial/customrecipes/master/images/enderman_spawn_egg.png)
+![Ghast](https://raw.githubusercontent.com/uprial/customrecipes/master/images/ghast_spawn_egg.png)
+![Magma Cube](https://raw.githubusercontent.com/uprial/customrecipes/master/images/magma_cube_spawn_egg.png)
+![Pig Spawner](https://raw.githubusercontent.com/uprial/customrecipes/master/images/pig_spawner.png)
+![Ravager](https://raw.githubusercontent.com/uprial/customrecipes/master/images/ravager_spawn_egg.png)
+![Shulker](https://raw.githubusercontent.com/uprial/customrecipes/master/images/shulker_spawn_egg.png)
+![Skeleton](https://raw.githubusercontent.com/uprial/customrecipes/master/images/skeleton_spawn_egg.png)
+![Slime](https://raw.githubusercontent.com/uprial/customrecipes/master/images/slime_spawn_egg.png)
+![Spider](https://raw.githubusercontent.com/uprial/customrecipes/master/images/spider_spawn_egg.png)
+![Wither Skeleton](https://raw.githubusercontent.com/uprial/customrecipes/master/images/wither_skeleton_spawn_egg.png)
+![Zombie](https://raw.githubusercontent.com/uprial/customrecipes/master/images/zombie_spawn_egg.png)
+
 ## Commands
 
 `customrecipes reload` - reload config from disk

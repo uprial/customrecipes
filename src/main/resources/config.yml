@@ -24,8 +24,19 @@ debug: false
 # <recipe-keyN>
 enabled-recipes:
   - PigSpawner
+  - BlazeSpawnEgg
   - CreeperSpawnEgg
-
+  - DrownedSpawnEgg
+  - EndermanSpawnEgg
+  - GhastSpawnEgg
+  - MagmaCubeSpawnEgg
+  - RavagerSpawnEgg
+  - ShulkerSpawnEgg
+  - SkeletonSpawnEgg
+  - SlimeSpawnEgg
+  - SpiderSpawnEgg
+  - WitherSkeletonSpawnEgg
+  - ZombieSpawnEgg
 
 #
 # ==== Recipes definition ====
@@ -56,7 +67,14 @@ PigSpawner:
     - PORKCHOP CLOCK PORKCHOP
     - IRON_BLOCK PORKCHOP IRON_BLOCK
   material: SPAWNER
-  amount: 1
+
+BlazeSpawnEgg:
+  name: "Blaze Spawn Egg"
+  recipe:
+    - BLAZE_ROD BLAZE_ROD BLAZE_ROD
+    - BLAZE_ROD EGG BLAZE_ROD
+    - BLAZE_ROD BLAZE_ROD BLAZE_ROD
+  material: BLAZE_SPAWN_EGG
 
 CreeperSpawnEgg:
   name: "Creeper Spawn Egg"
@@ -65,4 +83,91 @@ CreeperSpawnEgg:
     - GUNPOWDER EGG GUNPOWDER
     - GUNPOWDER GUNPOWDER GUNPOWDER
   material: CREEPER_SPAWN_EGG
-  amount: 2
+
+DrownedSpawnEgg:
+  name: "Drowned Spawn Egg"
+  recipe:
+    - TRIDENT TRIDENT TRIDENT
+    - TRIDENT EGG TRIDENT
+    - TRIDENT TRIDENT TRIDENT
+  material: DROWNED_SPAWN_EGG
+
+EndermanSpawnEgg:
+  name: "Enderman Spawn Egg"
+  recipe:
+    - ENDER_PEARL ENDER_PEARL ENDER_PEARL
+    - ENDER_PEARL EGG ENDER_PEARL
+    - ENDER_PEARL ENDER_PEARL ENDER_PEARL
+  material: ENDERMAN_SPAWN_EGG
+
+GhastSpawnEgg:
+  name: "Ghast Spawn Egg"
+  recipe:
+    - GHAST_TEAR GHAST_TEAR GHAST_TEAR
+    - GHAST_TEAR EGG GHAST_TEAR
+    - GHAST_TEAR GHAST_TEAR GHAST_TEAR
+  material: GHAST_SPAWN_EGG
+
+MagmaCubeSpawnEgg:
+  name: "Magma Cube Spawn Egg"
+  recipe:
+    - MAGMA_CREAM MAGMA_CREAM MAGMA_CREAM
+    - MAGMA_CREAM EGG MAGMA_CREAM
+    - MAGMA_CREAM MAGMA_CREAM MAGMA_CREAM
+  material: MAGMA_CUBE_SPAWN_EGG
+
+RavagerSpawnEgg:
+  name: "Ravager Spawn Egg"
+  recipe:
+    - SADDLE SADDLE SADDLE
+    - SADDLE EGG SADDLE
+    - SADDLE SADDLE SADDLE
+  material: RAVAGER_SPAWN_EGG
+
+ShulkerSpawnEgg:
+  name: "Shulker Spawn Egg"
+  recipe:
+    - SHULKER_SHELL SHULKER_SHELL SHULKER_SHELL
+    - SHULKER_SHELL EGG SHULKER_SHELL
+    - SHULKER_SHELL SHULKER_SHELL SHULKER_SHELL
+  material: SHULKER_SPAWN_EGG
+
+SkeletonSpawnEgg:
+  name: "Skeleton Spawn Egg"
+  recipe:
+    - BONE BONE BONE
+    - BONE EGG BONE
+    - BONE BONE BONE
+  material: SKELETON_SPAWN_EGG
+
+SlimeSpawnEgg:
+  name: "Slime Spawn Egg"
+  recipe:
+    - SLIME_BALL SLIME_BALL SLIME_BALL
+    - SLIME_BALL EGG SLIME_BALL
+    - SLIME_BALL SLIME_BALL SLIME_BALL
+  material: SLIME_SPAWN_EGG
+
+SpiderSpawnEgg:
+  name: "Spider Spawn Egg"
+  recipe:
+    - SPIDER_EYE SPIDER_EYE SPIDER_EYE
+    - SPIDER_EYE EGG SPIDER_EYE
+    - SPIDER_EYE SPIDER_EYE SPIDER_EYE
+  material: SPIDER_SPAWN_EGG
+
+WitherSkeletonSpawnEgg:
+  name: "Wither Skeleton Spawn Egg"
+  recipe:
+    - WITHER_SKELETON_SKULL WITHER_SKELETON_SKULL WITHER_SKELETON_SKULL
+    - WITHER_SKELETON_SKULL EGG WITHER_SKELETON_SKULL
+    - WITHER_SKELETON_SKULL WITHER_SKELETON_SKULL WITHER_SKELETON_SKULL
+  material: WITHER_SKELETON_SPAWN_EGG
+
+ZombieSpawnEgg:
+  name: "Zombie Spawn Egg"
+  recipe:
+    - ROTTEN_FLESH ROTTEN_FLESH ROTTEN_FLESH
+    - ROTTEN_FLESH EGG ROTTEN_FLESH
+    - ROTTEN_FLESH ROTTEN_FLESH ROTTEN_FLESH
+  material: ZOMBIE_SPAWN_EGG
