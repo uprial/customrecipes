@@ -30,6 +30,7 @@ enabled-recipes:
   - EndermanSpawnEgg
   - GhastSpawnEgg
   - MagmaCubeSpawnEgg
+  - PigSpawnEgg
   - RavagerSpawnEgg
   - ShulkerSpawnEgg
   - SkeletonSpawnEgg
@@ -115,6 +116,14 @@ MagmaCubeSpawnEgg:
     - MAGMA_CREAM EGG MAGMA_CREAM
     - MAGMA_CREAM MAGMA_CREAM MAGMA_CREAM
   material: MAGMA_CUBE_SPAWN_EGG
+
+PigSpawnEgg:
+  name: "Pig Spawn Egg"
+  recipe:
+    - PORKCHOP PORKCHOP PORKCHOP
+    - PORKCHOP EGG PORKCHOP
+    - PORKCHOP PORKCHOP PORKCHOP
+  material: PIG_SPAWN_EGG
 
 RavagerSpawnEgg:
   name: "Ravager Spawn Egg"
