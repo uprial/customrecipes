@@ -15,13 +15,13 @@ The whole idea of this plugin is that YOU can add a recipe you want. For instanc
 1. Add a recipe key "PandaSpawnEgg" to the "enabled-recipes" config section. You may choose any name you want for the recipe key, that is not yet present in the config file.
 
 2. Add the recipe key definition to the end of the config file:
-PandaSpawnEgg:
-  name: "Panda Spawn Egg"
-  recipe:
-    - BAMBOO BAMBOO BAMBOO
-    - BAMBOO EGG BAMBOO
-    - BAMBOO BAMBOO BAMBOO
-  material: PANDA_SPAWN_EGG
+    PandaSpawnEgg:
+      name: "Panda Spawn Egg"
+      recipe:
+        - BAMBOO BAMBOO BAMBOO
+        - BAMBOO EGG BAMBOO
+        - BAMBOO BAMBOO BAMBOO
+      material: PANDA_SPAWN_EGG
 
 ### Existing Pig Spawner Recipe
 ![Pig Spawner](https://raw.githubusercontent.com/uprial/customrecipes/master/images/pig_spawner.png)
