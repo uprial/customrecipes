@@ -10,10 +10,23 @@ A Minecraft (Bukkit) plugin that allows creating custom recipes
 
 ## Features
 
-### Pig Spawner
+The whole idea of this plugin is that YOU can add a recipe you want. For instance, to add a recipe for panda spawn egg from an egg and bamboos, you can modify the config.yaml file.
+
+1. Add a recipe key "PandaSpawnEgg" to the "enabled-recipes" config section. You may choose any name you want for the recipe key, that is not yet present in the config file.
+
+2. Add the recipe key definition to the end of the config file:
+PandaSpawnEgg:
+  name: "Panda Spawn Egg"
+  recipe:
+    - BAMBOO BAMBOO BAMBOO
+    - BAMBOO EGG BAMBOO
+    - BAMBOO BAMBOO BAMBOO
+  material: PANDA_SPAWN_EGG
+
+### Existing Pig Spawner Recipe
 ![Pig Spawner](https://raw.githubusercontent.com/uprial/customrecipes/master/images/pig_spawner.png)
 
-### Eggs
+### Existing Eggs Recipes
 ![Blaze](https://raw.githubusercontent.com/uprial/customrecipes/master/images/blaze_spawn_egg.png)
 ![Creeper](https://raw.githubusercontent.com/uprial/customrecipes/master/images/creeper_spawn_egg.png)
 ![Drowned](https://raw.githubusercontent.com/uprial/customrecipes/master/images/drowned_spawn_egg.png)
