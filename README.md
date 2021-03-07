@@ -12,9 +12,9 @@ A Minecraft (Bukkit) plugin that allows creating custom recipes
 
 The whole idea of this plugin is that YOU can add a recipe you want. For instance, to add a recipe for panda spawn egg from an egg and bamboos, you can modify the config.yaml file.
 
-1. Add a recipe key "PandaSpawnEgg" to the "enabled-recipes" config section. You may choose any name you want for the recipe key, that is not yet present in the config file.
+At first, add a recipe key "PandaSpawnEgg" to the "enabled-recipes" config section. You may choose any name you want for the recipe key, that is not yet present in the config file.
 
-2. Add the recipe key definition to the end of the config file:
+Then, add the recipe key definition to the end of the config file:
     PandaSpawnEgg:
       name: "Panda Spawn Egg"
       recipe:
