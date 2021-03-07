@@ -15,6 +15,7 @@ The whole idea of this plugin is that YOU can add a recipe you want. For instanc
 At first, add a recipe key "PandaSpawnEgg" to the "enabled-recipes" config section. You may choose any name you want for the recipe key, that is not yet present in the config file.
 
 Then, add the recipe key definition to the end of the config file:
+
     PandaSpawnEgg:
       name: "Panda Spawn Egg"
       recipe:
