@@ -27,7 +27,7 @@ Then, add the recipe key definition to the end of the config file:
 ### Existing Pig Spawner Recipe
 ![Pig Spawner](https://raw.githubusercontent.com/uprial/customrecipes/master/images/pig_spawner.png)
 
-### Existing Eggs Recipes
+### Existing Spawn Eggs Recipes
 ![Blaze](https://raw.githubusercontent.com/uprial/customrecipes/master/images/blaze_spawn_egg.png)
 ![Creeper](https://raw.githubusercontent.com/uprial/customrecipes/master/images/creeper_spawn_egg.png)
 ![Drowned](https://raw.githubusercontent.com/uprial/customrecipes/master/images/drowned_spawn_egg.png)
