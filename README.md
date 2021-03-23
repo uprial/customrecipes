@@ -34,6 +34,7 @@ Then, add the recipe key definition to the end of the config file:
 ![Enderman](https://raw.githubusercontent.com/uprial/customrecipes/master/images/enderman_spawn_egg.png)
 ![Ghast](https://raw.githubusercontent.com/uprial/customrecipes/master/images/ghast_spawn_egg.png)
 ![Magma Cube](https://raw.githubusercontent.com/uprial/customrecipes/master/images/magma_cube_spawn_egg.png)
+![Panda](https://raw.githubusercontent.com/uprial/customrecipes/master/images/panda_spawn_egg.png)
 ![Pig](https://raw.githubusercontent.com/uprial/customrecipes/master/images/pig_spawn_egg.png)
 ![Ravager](https://raw.githubusercontent.com/uprial/customrecipes/master/images/ravager_spawn_egg.png)
 ![Shulker](https://raw.githubusercontent.com/uprial/customrecipes/master/images/shulker_spawn_egg.png)
@@ -42,6 +43,10 @@ Then, add the recipe key definition to the end of the config file:
 ![Spider](https://raw.githubusercontent.com/uprial/customrecipes/master/images/spider_spawn_egg.png)
 ![Wither Skeleton](https://raw.githubusercontent.com/uprial/customrecipes/master/images/wither_skeleton_spawn_egg.png)
 ![Zombie](https://raw.githubusercontent.com/uprial/customrecipes/master/images/zombie_spawn_egg.png)
+
+### Existing Other Recipes
+![Sponge](https://raw.githubusercontent.com/uprial/customrecipes/master/images/sponge.png)
+
 
 ## Commands
 

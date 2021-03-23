@@ -24,12 +24,14 @@ debug: false
 # <recipe-keyN>
 enabled-recipes:
   - PigSpawner
+
   - BlazeSpawnEgg
   - CreeperSpawnEgg
   - DrownedSpawnEgg
   - EndermanSpawnEgg
   - GhastSpawnEgg
   - MagmaCubeSpawnEgg
+  - PandaSpawnEgg
   - PigSpawnEgg
   - RavagerSpawnEgg
   - ShulkerSpawnEgg
@@ -38,6 +40,8 @@ enabled-recipes:
   - SpiderSpawnEgg
   - WitherSkeletonSpawnEgg
   - ZombieSpawnEgg
+
+  - Sponge
 
 #
 # ==== Recipes definition ====
@@ -117,6 +121,14 @@ MagmaCubeSpawnEgg:
     - MAGMA_CREAM MAGMA_CREAM MAGMA_CREAM
   material: MAGMA_CUBE_SPAWN_EGG
 
+PandaSpawnEgg:
+  name: "Panda Spawn Egg"
+  recipe:
+    - BAMBOO BAMBOO BAMBOO
+    - BAMBOO EGG BAMBOO
+    - BAMBOO BAMBOO BAMBOO
+  material: PANDA_SPAWN_EGG
+
 PigSpawnEgg:
   name: "Pig Spawn Egg"
   recipe:
@@ -180,3 +192,11 @@ ZombieSpawnEgg:
     - ROTTEN_FLESH EGG ROTTEN_FLESH
     - ROTTEN_FLESH ROTTEN_FLESH ROTTEN_FLESH
   material: ZOMBIE_SPAWN_EGG
+
+Sponge:
+  name: "Sponge"
+  recipe:
+    - DIRT DIRT DIRT
+    - DIRT WATER_BUCKET DIRT
+    - DIRT DIRT DIRT
+  material: SPONGE
