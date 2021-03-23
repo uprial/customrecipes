@@ -38,6 +38,7 @@ enabled-recipes:
   - SpiderSpawnEgg
   - WitherSkeletonSpawnEgg
   - ZombieSpawnEgg
+  - Sponge
 
 #
 # ==== Recipes definition ====
@@ -180,3 +181,11 @@ ZombieSpawnEgg:
     - ROTTEN_FLESH EGG ROTTEN_FLESH
     - ROTTEN_FLESH ROTTEN_FLESH ROTTEN_FLESH
   material: ZOMBIE_SPAWN_EGG
+  
+  Sponge:
+  name: "Sponge"
+  recipe:
+    -  DIRT 
+    - DIRT WATER_BUCKET DIRT
+    -  DIRT 
+  material: SPONGE
