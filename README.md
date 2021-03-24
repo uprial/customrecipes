@@ -67,6 +67,7 @@ I will be happy to add some features or fix bugs. My mail: uprial@gmail.com.
 * [Project on GitHub](https://github.com/uprial/customrecipes/)
 * [Project on Bukkit Dev](https://dev.bukkit.org/projects/custom-recipes)
 * [Project on Spigot](https://www.spigotmc.org/resources/customrecipes.89435/)
+* [TODO list](TODO.md)
 
 ## Related projects
 * CustomNukes: [Bukkit Dev](http://dev.bukkit.org/bukkit-plugins/customnukes/), [GitHub](https://github.com/uprial/customnukes), [Spigot](https://www.spigotmc.org/resources/customnukes.68710/)
