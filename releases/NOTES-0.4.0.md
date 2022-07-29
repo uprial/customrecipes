@@ -1,2 +1,2 @@
 # New features
-* Added Cod, Cow, Evoker, Glowing Squid, Phantom, Pillager, Pufferfish, Rabbit, Salmon, Sheep, Squid, Tropical Fish, Turtle, Vindicator, Warden
+* Added Cod, Cow, Evoker, Glow Squid, Phantom, Pillager, Pufferfish, Rabbit, Salmon, Sheep, Squid, Tropical Fish, Turtle, Vindicator, Warden

@@ -36,7 +36,7 @@ Then, add the recipe key definition to the end of the config file:
 ![Enderman](https://raw.githubusercontent.com/uprial/customrecipes/master/images/enderman_spawn_egg.png)
 ![Evoker](https://raw.githubusercontent.com/uprial/customrecipes/master/images/evoker_spawn_egg.png)
 ![Ghast](https://raw.githubusercontent.com/uprial/customrecipes/master/images/ghast_spawn_egg.png)
-![Glowing Squid](https://raw.githubusercontent.com/uprial/customrecipes/master/images/glowing_squid_spawn_egg.png)
+![Glow Squid](https://raw.githubusercontent.com/uprial/customrecipes/master/images/glow_squid_spawn_egg.png)
 ![Magma Cube](https://raw.githubusercontent.com/uprial/customrecipes/master/images/magma_cube_spawn_egg.png)
 ![Panda](https://raw.githubusercontent.com/uprial/customrecipes/master/images/panda_spawn_egg.png)
 ![Phantom](https://raw.githubusercontent.com/uprial/customrecipes/master/images/phantom_spawn_egg.png)
