@@ -26,18 +26,33 @@ enabled-recipes:
   - PigSpawner
 
   - BlazeSpawnEgg
+  - CodSpawnEgg
+  - CowSpawnEgg
   - CreeperSpawnEgg
   - DrownedSpawnEgg
   - EndermanSpawnEgg
+  - EvokerSpawnEgg
   - GhastSpawnEgg
+  - GlowSquidSpawnEgg
   - MagmaCubeSpawnEgg
   - PandaSpawnEgg
+  - PhantomSpawnEgg
   - PigSpawnEgg
+  - PillagerSpawnEgg
+  - PufferfishSpawnEgg
+  - RabbitSpawnEgg
   - RavagerSpawnEgg
+  - SalmonSpawnEgg
+  - SheepSpawnEgg
   - ShulkerSpawnEgg
   - SkeletonSpawnEgg
   - SlimeSpawnEgg
   - SpiderSpawnEgg
+  - SquidSpawnEgg
+  - TropicalFishSpawnEgg
+  - TurtleSpawnEgg
+  - VindicatorSpawnEgg
+  - WardenSpawnEgg
   - WitherSkeletonSpawnEgg
   - ZombieSpawnEgg
 
@@ -81,6 +96,22 @@ BlazeSpawnEgg:
     - BLAZE_ROD BLAZE_ROD BLAZE_ROD
   material: BLAZE_SPAWN_EGG
 
+CodSpawnEgg:
+  name: "Cod Spawn Egg"
+  recipe:
+    - COD COD COD
+    - COD EGG COD
+    - COD COD COD
+  material: COD_SPAWN_EGG
+
+CowSpawnEgg:
+  name: "Cow Spawn Egg"
+  recipe:
+    - BEEF BEEF BEEF
+    - BEEF EGG BEEF
+    - BEEF BEEF BEEF
+  material: COW_SPAWN_EGG
+
 CreeperSpawnEgg:
   name: "Creeper Spawn Egg"
   recipe:
@@ -105,6 +136,14 @@ EndermanSpawnEgg:
     - ENDER_PEARL ENDER_PEARL ENDER_PEARL
   material: ENDERMAN_SPAWN_EGG
 
+EvokerSpawnEgg:
+  name: "Evoker Spawn Egg"
+  recipe:
+    - TOTEM_OF_UNDYING TOTEM_OF_UNDYING TOTEM_OF_UNDYING
+    - TOTEM_OF_UNDYING EGG TOTEM_OF_UNDYING
+    - TOTEM_OF_UNDYING TOTEM_OF_UNDYING TOTEM_OF_UNDYING
+  material: EVOKER_SPAWN_EGG
+
 GhastSpawnEgg:
   name: "Ghast Spawn Egg"
   recipe:
@@ -112,6 +151,14 @@ GhastSpawnEgg:
     - GHAST_TEAR EGG GHAST_TEAR
     - GHAST_TEAR GHAST_TEAR GHAST_TEAR
   material: GHAST_SPAWN_EGG
+
+GlowSquidSpawnEgg:
+  name: "Glow Squid Spawn Egg"
+  recipe:
+    - GLOW_INK_SAC GLOW_INK_SAC GLOW_INK_SAC
+    - GLOW_INK_SAC EGG GLOW_INK_SAC
+    - GLOW_INK_SAC GLOW_INK_SAC GLOW_INK_SAC
+  material: GLOW_SQUID_SPAWN_EGG
 
 MagmaCubeSpawnEgg:
   name: "Magma Cube Spawn Egg"
@@ -129,6 +176,14 @@ PandaSpawnEgg:
     - BAMBOO BAMBOO BAMBOO
   material: PANDA_SPAWN_EGG
 
+PhantomSpawnEgg:
+  name: "Phantom Spawn Egg"
+  recipe:
+    - PHANTOM_MEMBRANE PHANTOM_MEMBRANE PHANTOM_MEMBRANE
+    - PHANTOM_MEMBRANE EGG PHANTOM_MEMBRANE
+    - PHANTOM_MEMBRANE PHANTOM_MEMBRANE PHANTOM_MEMBRANE
+  material: PHANTOM_SPAWN_EGG
+
 PigSpawnEgg:
   name: "Pig Spawn Egg"
   recipe:
@@ -137,6 +192,30 @@ PigSpawnEgg:
     - PORKCHOP PORKCHOP PORKCHOP
   material: PIG_SPAWN_EGG
 
+PillagerSpawnEgg:
+  name: "Pillager Spawn Egg"
+  recipe:
+    - CROSSBOW CROSSBOW CROSSBOW
+    - CROSSBOW EGG CROSSBOW
+    - CROSSBOW CROSSBOW CROSSBOW
+  material: PILLAGER_SPAWN_EGG
+
+PufferfishSpawnEgg:
+  name: "Pufferfish Spawn Egg"
+  recipe:
+    - PUFFERFISH PUFFERFISH PUFFERFISH
+    - PUFFERFISH EGG PUFFERFISH
+    - PUFFERFISH PUFFERFISH PUFFERFISH
+  material: PUFFERFISH_SPAWN_EGG
+
+RabbitSpawnEgg:
+  name: "Rabbit Spawn Egg"
+  recipe:
+    - RABBIT RABBIT RABBIT
+    - RABBIT EGG RABBIT
+    - RABBIT RABBIT RABBIT
+  material: RABBIT_SPAWN_EGG
+
 RavagerSpawnEgg:
   name: "Ravager Spawn Egg"
   recipe:
@@ -144,6 +223,22 @@ RavagerSpawnEgg:
     - SADDLE EGG SADDLE
     - SADDLE SADDLE SADDLE
   material: RAVAGER_SPAWN_EGG
+
+SalmonSpawnEgg:
+  name: "Salmon Spawn Egg"
+  recipe:
+    - SALMON SALMON SALMON
+    - SALMON EGG SALMON
+    - SALMON SALMON SALMON
+  material: SALMON_SPAWN_EGG
+
+SheepSpawnEgg:
+  name: "Sheep Spawn Egg"
+  recipe:
+    - MUTTON MUTTON MUTTON
+    - MUTTON EGG MUTTON
+    - MUTTON MUTTON MUTTON
+  material: SHEEP_SPAWN_EGG
 
 ShulkerSpawnEgg:
   name: "Shulker Spawn Egg"
@@ -177,6 +272,38 @@ SpiderSpawnEgg:
     - SPIDER_EYE SPIDER_EYE SPIDER_EYE
   material: SPIDER_SPAWN_EGG
 
+SquidSpawnEgg:
+  name: "Squid Spawn Egg"
+  recipe:
+    - INK_SAC INK_SAC INK_SAC
+    - INK_SAC EGG INK_SAC
+    - INK_SAC INK_SAC INK_SAC
+  material: SQUID_SPAWN_EGG
+
+TropicalFishSpawnEgg:
+  name: "Tropical Fish Spawn Egg"
+  recipe:
+    - TROPICAL_FISH TROPICAL_FISH TROPICAL_FISH
+    - TROPICAL_FISH EGG TROPICAL_FISH
+    - TROPICAL_FISH TROPICAL_FISH TROPICAL_FISH
+  material: TROPICAL_FISH_SPAWN_EGG
+
+TurtleSpawnEgg:
+  name: "Turtle Spawn Egg"
+  recipe:
+    - SCUTE SCUTE SCUTE
+    - SCUTE EGG SCUTE
+    - SCUTE SCUTE SCUTE
+  material: TURTLE_SPAWN_EGG
+
+VindicatorSpawnEgg:
+  name: "Vindicator Spawn Egg"
+  recipe:
+    - IRON_AXE IRON_AXE IRON_AXE
+    - IRON_AXE EGG IRON_AXE
+    - IRON_AXE IRON_AXE IRON_AXE
+  material: VINDICATOR_SPAWN_EGG
+
 WitherSkeletonSpawnEgg:
   name: "Wither Skeleton Spawn Egg"
   recipe:
@@ -184,6 +311,14 @@ WitherSkeletonSpawnEgg:
     - WITHER_SKELETON_SKULL EGG WITHER_SKELETON_SKULL
     - WITHER_SKELETON_SKULL WITHER_SKELETON_SKULL WITHER_SKELETON_SKULL
   material: WITHER_SKELETON_SPAWN_EGG
+
+WardenSpawnEgg:
+  name: "Warden Spawn Egg"
+  recipe:
+    - SCULK_CATALYST SCULK_CATALYST SCULK_CATALYST
+    - SCULK_CATALYST EGG SCULK_CATALYST
+    - SCULK_CATALYST SCULK_CATALYST SCULK_CATALYST
+  material: WARDEN_SPAWN_EGG
 
 ZombieSpawnEgg:
   name: "Zombie Spawn Egg"
