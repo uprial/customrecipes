@@ -331,7 +331,8 @@ ZombieSpawnEgg:
 Sponge:
   name: "Sponge"
   recipe:
-    - DIRT DIRT DIRT
-    - DIRT WATER_BUCKET DIRT
-    - DIRT DIRT DIRT
+    - SAND SAND SAND
+    - SAND WITHER_SKELETON_SKULL SAND
+    - SAND SAND SAND
   material: SPONGE
+  amount: 8
