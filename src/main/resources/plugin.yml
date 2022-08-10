@@ -1,6 +1,6 @@
 name: CustomRecipes
 main: com.gmail.uprial.customrecipes.CustomRecipes
-version: 0.4.1
+version: 0.4.2
 api-version: 1.14
 commands:
    customrecipes:

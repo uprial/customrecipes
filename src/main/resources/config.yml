@@ -332,7 +332,7 @@ Sponge:
   name: "Sponge"
   recipe:
     - SAND SAND SAND
-    - SAND WITHER_SKELETON_SKULL SAND
+    - SAND NETHER_STAR SAND
     - SAND SAND SAND
   material: SPONGE
   amount: 8
