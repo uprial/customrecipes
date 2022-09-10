@@ -1,2 +1,3 @@
 # New features
-- I was wondering if it would be possible to add further customization for craftable items though, to let players craft equipment with certain enchantments or even custom attributes (like attack damage, attack speed, armor toughness...). Those are all things possible with the vanilla "/give" command, so I'm already using loot like this for dungeons. It would be really nice if this plugin was able to let players craft some of those items too though :)
+* Add enhanced golden apple, bedrock, and barrier.
+* Craft items with enchantments and custom attributes, e.g., attack damage, attack speed, armor toughness, etc.
