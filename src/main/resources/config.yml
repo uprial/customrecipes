@@ -56,7 +56,10 @@ enabled-recipes:
   - WitherSkeletonSpawnEgg
   - ZombieSpawnEgg
 
+  - Cobblestone
   - Sponge
+  - Stick
+  - String
 
 #
 # ==== Recipes definition ====
@@ -328,6 +331,14 @@ ZombieSpawnEgg:
     - ROTTEN_FLESH ROTTEN_FLESH ROTTEN_FLESH
   material: ZOMBIE_SPAWN_EGG
 
+Cobblestone:
+  name: "Cobblestone"
+  recipe:
+    - BONE BONE BONE
+    - BONE BONE BONE
+    - BONE BONE BONE
+  material: COBBLESTONE
+
 Sponge:
   name: "Sponge"
   recipe:
@@ -336,3 +347,20 @@ Sponge:
     - SAND SAND SAND
   material: SPONGE
   amount: 8
+
+Stick:
+  name: "Stick"
+  recipe:
+    - ARROW ARROW ARROW
+    - ARROW ARROW ARROW
+    - ARROW ARROW ARROW
+  material: STICK
+
+String:
+  name: "String"
+  recipe:
+    - BOW BOW BOW
+    - BOW BOW BOW
+    - BOW BOW BOW
+  material: STRING
+  amount: 7

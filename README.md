@@ -60,7 +60,10 @@ Then, add the recipe key definition to the end of the config file:
 ![Zombie](https://raw.githubusercontent.com/uprial/customrecipes/master/images/zombie_spawn_egg.png)
 
 ### Existing Other Recipes
+![Cobblestone](https://raw.githubusercontent.com/uprial/customrecipes/master/images/cobblestone.png)
 ![Sponge](https://raw.githubusercontent.com/uprial/customrecipes/master/images/sponge.png)
+![Stick](https://raw.githubusercontent.com/uprial/customrecipes/master/images/stick.png)
+![String](https://raw.githubusercontent.com/uprial/customrecipes/master/images/string.png)
 
 
 ## Commands
