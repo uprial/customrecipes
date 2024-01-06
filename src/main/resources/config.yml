@@ -60,6 +60,7 @@ enabled-recipes:
   - Sponge
   - Stick
   - String
+  - Prismarine
 
 #
 # ==== Recipes definition ====
@@ -364,3 +365,13 @@ String:
     - BOW BOW BOW
   material: STRING
   amount: 7
+
+Prismarine:
+  name: "Prismarine"
+  recipe:
+    - COBBLESTONE COBBLESTONE COBBLESTONE
+    - COBBLESTONE DIAMOND COBBLESTONE
+    - COBBLESTONE COBBLESTONE COBBLESTONE
+  material: PRISMARINE
+  amount: 8
+

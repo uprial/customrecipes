@@ -64,7 +64,7 @@ Then, add the recipe key definition to the end of the config file:
 ![Sponge](https://raw.githubusercontent.com/uprial/customrecipes/master/images/sponge.png)
 ![Stick](https://raw.githubusercontent.com/uprial/customrecipes/master/images/stick.png)
 ![String](https://raw.githubusercontent.com/uprial/customrecipes/master/images/string.png)
-
+![Prismarine](https://raw.githubusercontent.com/uprial/customrecipes/master/images/prismarine.png)
 
 ## Commands
 
