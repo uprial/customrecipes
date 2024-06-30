@@ -295,9 +295,9 @@ TropicalFishSpawnEgg:
 TurtleSpawnEgg:
   name: "Turtle Spawn Egg"
   recipe:
-    - SCUTE SCUTE SCUTE
-    - SCUTE EGG SCUTE
-    - SCUTE SCUTE SCUTE
+    - TURTLE_SCUTE TURTLE_SCUTE TURTLE_SCUTE
+    - TURTLE_SCUTE EGG TURTLE_SCUTE
+    - TURTLE_SCUTE TURTLE_SCUTE TURTLE_SCUTE
   material: TURTLE_SPAWN_EGG
 
 VindicatorSpawnEgg:
