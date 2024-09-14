@@ -6,7 +6,7 @@ Tested on Spigot-1.16, 1.19, 1.20, 1.20.6, 1.21.
 
 ## Introduction
 
-A Minecraft (Bukkit) plugin that allows creating custom recipes
+Create your own fully customizable recipes. Presets: craft a mob spawner, many spawn eggs, sponge, prismarine, etc.
 
 ## Features
 
