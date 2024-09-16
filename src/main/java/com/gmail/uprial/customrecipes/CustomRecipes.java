@@ -83,7 +83,7 @@ public final class CustomRecipes extends JavaPlugin {
         return YamlConfiguration.loadConfiguration(configFile);
     }
 
-    private static CustomRecipesConfig loadConfig(FileConfiguration config, CustomLogger customLogger) {
+    static CustomRecipesConfig loadConfig(FileConfiguration config, CustomLogger customLogger) {
         return loadConfig(config, customLogger, null);
     }
 

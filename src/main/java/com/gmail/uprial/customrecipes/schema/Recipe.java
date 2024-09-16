@@ -25,11 +25,11 @@ public final class Recipe {
     private static final int MAX_AMOUNT = 64;
 
     private final String keyLC;
-    private String name;
-    private List<String> description;
-    private RecipeRecipe recipe;
-    private Material material;
-    private int amount;
+    private final String name;
+    private final List<String> description;
+    private final RecipeRecipe recipe;
+    private final Material material;
+    private final int amount;
 
     @SuppressWarnings("BooleanParameter")
     private Recipe(String key, String name, List<String> description, RecipeRecipe recipe, Material material, int amount) {
@@ -63,6 +63,9 @@ public final class Recipe {
 
     @SuppressWarnings({"BooleanParameter", "AccessingNonPublicFieldOfAnotherObject"})
     public static Recipe getFromConfig(FileConfiguration config, CustomLogger customLogger, String key) throws InvalidConfigException {
+        if(config.getConfigurationSection(key) == null) {
+            throw new InvalidConfigException(String.format("Null definition of recipe-key '%s'", key));
+        }
         String name = ConfigReaderSimple.getString(config,key + ".name",
                 String.format("name of recipe-key '%s'", key));
         List<String> description = ConfigReaderSimple.getStringList(config, customLogger,
@@ -93,7 +96,7 @@ public final class Recipe {
     }
 
     public String toString() {
-        String descriptionString = (description == null) ? "" : (" (" + StringUtils.join(description, " ") + ')');
+        String descriptionString = (description == null) ? "" : ("(" + StringUtils.join(description, " ") + ')');
 
         return material + "~'" + name + descriptionString + "'=" + recipe;
     }

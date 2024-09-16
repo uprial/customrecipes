@@ -80,11 +80,11 @@ public final class RecipeRecipe {
         for(int i = 0; i < 3; i++) {
             String[] cols = rows.get(i).toString().split(" ");
             if(cols.length != 3) {
-                throw new InvalidConfigException(String.format("%s should have 3 cols at row %s", title, i));
+                throw new InvalidConfigException(String.format("%s should have 3 cols at row %s", title, i+1));
             }
             for(int j = 0; j < 3; j++) {
                 if(Material.getMaterial(cols[j]) == null) {
-                    throw new InvalidConfigException(String.format("Invalid material '%s' in %s at row %d, col %d", cols[j], title, i ,j));
+                    throw new InvalidConfigException(String.format("Invalid material '%s' in %s at row %d, col %d", cols[j], title, i+1 ,j+1));
                 }
                 else {
                     recipe.setItem(i, j, cols[j]);

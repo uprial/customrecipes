@@ -11,7 +11,7 @@ import java.util.*;
 
 import static com.gmail.uprial.customrecipes.config.ConfigReaderSimple.getKey;
 
-final class CustomRecipesConfig {
+public final class CustomRecipesConfig {
     private final List<Recipe> recipes;
 
     private CustomRecipesConfig(final List<Recipe> recipes) {
@@ -49,7 +49,7 @@ final class CustomRecipesConfig {
         return null;
     }
 
-    static CustomRecipesConfig getFromConfig(FileConfiguration config, CustomLogger customLogger) throws InvalidConfigException {
+    public static CustomRecipesConfig getFromConfig(FileConfiguration config, CustomLogger customLogger) throws InvalidConfigException {
         List<Recipe> recipes = new ArrayList<>();
         Set<String> names = new HashSet<>();
         Set<String> keys = new HashSet<>();
@@ -61,35 +61,27 @@ final class CustomRecipesConfig {
 
         int recipesConfigSize = recipesConfig.size();
         for(int i = 0; i < recipesConfigSize; i++) {
-            String key = getKey(recipesConfig.get(i), "'handlers'", i);
+            String key = getKey(recipesConfig.get(i), "'enabled-recipes'", i);
             String keyLC = key.toLowerCase(Locale.getDefault());
             if(keys.contains(keyLC)) {
-                throw new InvalidConfigException(String.format("key '%s' in 'enabled-recipes' is not unique", key));
+                throw new InvalidConfigException(String.format("Key '%s' in 'enabled-recipes' is not unique", key));
             }
-            if(config.getConfigurationSection(key) == null) {
-                throw new InvalidConfigException(String.format("Null definition of recipes-key '%s' from pos %d", key, i));
+            Recipe recipe = Recipe.getFromConfig(config, customLogger, key);
+
+            String nameLC = recipe.getName().toLowerCase(Locale.getDefault());
+            if(names.contains(nameLC)) {
+                throw new InvalidConfigException(String.format("Name '%s' of recipes-key '%s' is not unique", recipe.getName(), key));
             }
 
-            try {
-                Recipe recipe = Recipe.getFromConfig(config, customLogger, key);
-
-                String nameLC = recipe.getName().toLowerCase(Locale.getDefault());
-                if(names.contains(nameLC)) {
-                    throw new InvalidConfigException(String.format("Name '%s' of recipes-key '%s' is not unique", recipe.getName(), key));
-                }
-
-                recipes.add(recipe);
-                names.add(nameLC);
-                keys.add(keyLC);
-            } catch (InvalidConfigException e) {
-                customLogger.error(e.getMessage());
-            }
-        }
-
-        if(recipes.size() < 1) {
-            throw new InvalidConfigException("There are no valid recipes definitions");
+            recipes.add(recipe);
+            names.add(nameLC);
+            keys.add(keyLC);
         }
 
         return new CustomRecipesConfig(recipes);
+    }
+
+    public String toString() {
+        return String.format("recipes: %s", recipes.toString());
     }
 }
