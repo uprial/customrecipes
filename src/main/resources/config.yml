@@ -25,17 +25,22 @@ debug: false
 enabled-recipes:
   - PigSpawner
 
+  - ArmadilloSpawnEgg
+  - BeeSpawnEgg
   - BlazeSpawnEgg
+  - BreezeSpawnEgg
   - CodSpawnEgg
   - CowSpawnEgg
   - CreeperSpawnEgg
   - DrownedSpawnEgg
+  - ElderGuardianSpawnEgg
   - EndermanSpawnEgg
   - EvokerSpawnEgg
   - GhastSpawnEgg
   - GlowSquidSpawnEgg
   - MagmaCubeSpawnEgg
   - PandaSpawnEgg
+  - ParrotSpawnEgg
   - PhantomSpawnEgg
   - PigSpawnEgg
   - PillagerSpawnEgg
@@ -87,10 +92,26 @@ PigSpawner:
     - "by using a mob spawn egg"
     - "on the block."
   recipe:
-    - IRON_BLOCK PORKCHOP IRON_BLOCK
+    - GOLD_BLOCK GOLD_BLOCK GOLD_BLOCK
     - PORKCHOP CLOCK PORKCHOP
-    - IRON_BLOCK PORKCHOP IRON_BLOCK
+    - IRON_BLOCK IRON_BLOCK IRON_BLOCK
   material: SPAWNER
+
+ArmadilloSpawnEgg:
+  name: "Armadillo Spawn Egg"
+  recipe:
+    - ARMADILLO_SCUTE ARMADILLO_SCUTE ARMADILLO_SCUTE
+    - ARMADILLO_SCUTE EGG ARMADILLO_SCUTE
+    - ARMADILLO_SCUTE ARMADILLO_SCUTE ARMADILLO_SCUTE
+  material: ARMADILLO_SPAWN_EGG
+
+BeeSpawnEgg:
+  name: "Bee Spawn Egg"
+  recipe:
+    - HONEY_BOTTLE HONEY_BOTTLE HONEY_BOTTLE
+    - HONEY_BOTTLE EGG HONEY_BOTTLE
+    - HONEY_BOTTLE HONEY_BOTTLE HONEY_BOTTLE
+  material: BEE_SPAWN_EGG
 
 BlazeSpawnEgg:
   name: "Blaze Spawn Egg"
@@ -99,6 +120,14 @@ BlazeSpawnEgg:
     - BLAZE_ROD EGG BLAZE_ROD
     - BLAZE_ROD BLAZE_ROD BLAZE_ROD
   material: BLAZE_SPAWN_EGG
+
+BreezeSpawnEgg:
+  name: "Breeze Spawn Egg"
+  recipe:
+    - BREEZE_ROD BREEZE_ROD BREEZE_ROD
+    - BREEZE_ROD EGG BREEZE_ROD
+    - BREEZE_ROD BREEZE_ROD BREEZE_ROD
+  material: BREEZE_SPAWN_EGG
 
 CodSpawnEgg:
   name: "Cod Spawn Egg"
@@ -131,6 +160,14 @@ DrownedSpawnEgg:
     - TRIDENT EGG TRIDENT
     - TRIDENT TRIDENT TRIDENT
   material: DROWNED_SPAWN_EGG
+
+ElderGuardianSpawnEgg:
+  name: "Elder Guardian Spawn Egg"
+  recipe:
+    - WET_SPONGE WET_SPONGE WET_SPONGE
+    - WET_SPONGE EGG WET_SPONGE
+    - WET_SPONGE WET_SPONGE WET_SPONGE
+  material: ELDER_GUARDIAN_SPAWN_EGG
 
 EndermanSpawnEgg:
   name: "Enderman Spawn Egg"
@@ -179,6 +216,14 @@ PandaSpawnEgg:
     - BAMBOO EGG BAMBOO
     - BAMBOO BAMBOO BAMBOO
   material: PANDA_SPAWN_EGG
+
+ParrotSpawnEgg:
+  name: "Parrot Spawn Egg"
+  recipe:
+    - FEATHER FEATHER FEATHER
+    - FEATHER EGG FEATHER
+    - FEATHER FEATHER FEATHER
+  material: PARROT_SPAWN_EGG
 
 PhantomSpawnEgg:
   name: "Phantom Spawn Egg"
