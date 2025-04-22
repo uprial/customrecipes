@@ -5,7 +5,6 @@ import com.gmail.uprial.customrecipes.config.ConfigReaderSimple;
 import com.gmail.uprial.customrecipes.config.InvalidConfigException;
 import com.gmail.uprial.customrecipes.schema.Recipe;
 import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.inventory.ItemStack;
 
 import java.util.*;
 
@@ -24,29 +23,6 @@ public final class CustomRecipesConfig {
 
     static boolean isDebugMode(FileConfiguration config, CustomLogger customLogger) throws InvalidConfigException {
         return ConfigReaderSimple.getBoolean(config, customLogger, "debug", "'debug' flag", false);
-    }
-
-    Recipe searchRecipeByItemStack(ItemStack itemStack) {
-        if (itemStack.getItemMeta() == null) {
-            return null;
-        }
-        for(Recipe recipe : recipes) {
-            if (recipe.getName().equals(itemStack.getItemMeta().getDisplayName())
-                && recipe.getMaterial().equals(itemStack.getType())
-                && (recipe.getAmount() == itemStack.getAmount())) {
-                if(recipe.getDescription() == null) {
-                    if(itemStack.getItemMeta().getLore() == null) {
-                        return recipe;
-                    }
-                } else {
-                    if ((itemStack.getItemMeta().getLore() != null)
-                        && (recipe.getDescription().equals(itemStack.getItemMeta().getLore()))) {
-                        return recipe;
-                    }
-                }
-            }
-        }
-        return null;
     }
 
     public static CustomRecipesConfig getFromConfig(FileConfiguration config, CustomLogger customLogger) throws InvalidConfigException {
@@ -68,13 +44,7 @@ public final class CustomRecipesConfig {
             }
             Recipe recipe = Recipe.getFromConfig(config, customLogger, key);
 
-            String nameLC = recipe.getName().toLowerCase(Locale.getDefault());
-            if(names.contains(nameLC)) {
-                throw new InvalidConfigException(String.format("Name '%s' of recipes-key '%s' is not unique", recipe.getName(), key));
-            }
-
             recipes.add(recipe);
-            names.add(nameLC);
             keys.add(keyLC);
         }
 

@@ -61,10 +61,7 @@ enabled-recipes:
   - WitherSkeletonSpawnEgg
   - ZombieSpawnEgg
 
-  - Cobblestone
   - Sponge
-  - Stick
-  - String
   - Prismarine
 
 #
@@ -86,307 +83,258 @@ enabled-recipes:
 #
 
 PigSpawner:
-  name: "Pig Spawner"
-  description:
-    - "The pig can be changed"
-    - "by using a mob spawn egg"
-    - "on the block."
   recipe:
-    - GOLD_BLOCK GOLD_BLOCK GOLD_BLOCK
     - PORKCHOP CLOCK PORKCHOP
-    - IRON_BLOCK IRON_BLOCK IRON_BLOCK
+    - CLOCK DIAMOND_BLOCK CLOCK
+    - IRON_BLOCK CLOCK IRON_BLOCK
   material: SPAWNER
 
 ArmadilloSpawnEgg:
-  name: "Armadillo Spawn Egg"
   recipe:
     - ARMADILLO_SCUTE ARMADILLO_SCUTE ARMADILLO_SCUTE
-    - ARMADILLO_SCUTE EGG ARMADILLO_SCUTE
+    - ARMADILLO_SCUTE CLOCK ARMADILLO_SCUTE
     - ARMADILLO_SCUTE ARMADILLO_SCUTE ARMADILLO_SCUTE
   material: ARMADILLO_SPAWN_EGG
 
 BeeSpawnEgg:
-  name: "Bee Spawn Egg"
   recipe:
     - HONEY_BOTTLE HONEY_BOTTLE HONEY_BOTTLE
-    - HONEY_BOTTLE EGG HONEY_BOTTLE
+    - HONEY_BOTTLE CLOCK HONEY_BOTTLE
     - HONEY_BOTTLE HONEY_BOTTLE HONEY_BOTTLE
   material: BEE_SPAWN_EGG
 
 BlazeSpawnEgg:
-  name: "Blaze Spawn Egg"
   recipe:
     - BLAZE_ROD BLAZE_ROD BLAZE_ROD
-    - BLAZE_ROD EGG BLAZE_ROD
+    - BLAZE_ROD CLOCK BLAZE_ROD
     - BLAZE_ROD BLAZE_ROD BLAZE_ROD
   material: BLAZE_SPAWN_EGG
 
 BreezeSpawnEgg:
-  name: "Breeze Spawn Egg"
   recipe:
     - BREEZE_ROD BREEZE_ROD BREEZE_ROD
-    - BREEZE_ROD EGG BREEZE_ROD
+    - BREEZE_ROD CLOCK BREEZE_ROD
     - BREEZE_ROD BREEZE_ROD BREEZE_ROD
   material: BREEZE_SPAWN_EGG
 
 CodSpawnEgg:
-  name: "Cod Spawn Egg"
   recipe:
     - COD COD COD
-    - COD EGG COD
+    - COD CLOCK COD
     - COD COD COD
   material: COD_SPAWN_EGG
 
 CowSpawnEgg:
-  name: "Cow Spawn Egg"
   recipe:
     - BEEF BEEF BEEF
-    - BEEF EGG BEEF
+    - BEEF CLOCK BEEF
     - BEEF BEEF BEEF
   material: COW_SPAWN_EGG
 
 CreeperSpawnEgg:
-  name: "Creeper Spawn Egg"
   recipe:
     - GUNPOWDER GUNPOWDER GUNPOWDER
-    - GUNPOWDER EGG GUNPOWDER
+    - GUNPOWDER CLOCK GUNPOWDER
     - GUNPOWDER GUNPOWDER GUNPOWDER
   material: CREEPER_SPAWN_EGG
 
 DrownedSpawnEgg:
-  name: "Drowned Spawn Egg"
   recipe:
     - TRIDENT TRIDENT TRIDENT
-    - TRIDENT EGG TRIDENT
+    - TRIDENT CLOCK TRIDENT
     - TRIDENT TRIDENT TRIDENT
   material: DROWNED_SPAWN_EGG
 
 ElderGuardianSpawnEgg:
-  name: "Elder Guardian Spawn Egg"
   recipe:
     - WET_SPONGE WET_SPONGE WET_SPONGE
-    - WET_SPONGE EGG WET_SPONGE
+    - WET_SPONGE CLOCK WET_SPONGE
     - WET_SPONGE WET_SPONGE WET_SPONGE
   material: ELDER_GUARDIAN_SPAWN_EGG
 
 EndermanSpawnEgg:
-  name: "Enderman Spawn Egg"
   recipe:
     - ENDER_PEARL ENDER_PEARL ENDER_PEARL
-    - ENDER_PEARL EGG ENDER_PEARL
+    - ENDER_PEARL CLOCK ENDER_PEARL
     - ENDER_PEARL ENDER_PEARL ENDER_PEARL
   material: ENDERMAN_SPAWN_EGG
 
 EvokerSpawnEgg:
-  name: "Evoker Spawn Egg"
   recipe:
     - TOTEM_OF_UNDYING TOTEM_OF_UNDYING TOTEM_OF_UNDYING
-    - TOTEM_OF_UNDYING EGG TOTEM_OF_UNDYING
+    - TOTEM_OF_UNDYING CLOCK TOTEM_OF_UNDYING
     - TOTEM_OF_UNDYING TOTEM_OF_UNDYING TOTEM_OF_UNDYING
   material: EVOKER_SPAWN_EGG
 
 GhastSpawnEgg:
-  name: "Ghast Spawn Egg"
   recipe:
     - GHAST_TEAR GHAST_TEAR GHAST_TEAR
-    - GHAST_TEAR EGG GHAST_TEAR
+    - GHAST_TEAR CLOCK GHAST_TEAR
     - GHAST_TEAR GHAST_TEAR GHAST_TEAR
   material: GHAST_SPAWN_EGG
 
 GlowSquidSpawnEgg:
-  name: "Glow Squid Spawn Egg"
   recipe:
     - GLOW_INK_SAC GLOW_INK_SAC GLOW_INK_SAC
-    - GLOW_INK_SAC EGG GLOW_INK_SAC
+    - GLOW_INK_SAC CLOCK GLOW_INK_SAC
     - GLOW_INK_SAC GLOW_INK_SAC GLOW_INK_SAC
   material: GLOW_SQUID_SPAWN_EGG
 
 MagmaCubeSpawnEgg:
-  name: "Magma Cube Spawn Egg"
   recipe:
     - MAGMA_CREAM MAGMA_CREAM MAGMA_CREAM
-    - MAGMA_CREAM EGG MAGMA_CREAM
+    - MAGMA_CREAM CLOCK MAGMA_CREAM
     - MAGMA_CREAM MAGMA_CREAM MAGMA_CREAM
   material: MAGMA_CUBE_SPAWN_EGG
 
 PandaSpawnEgg:
-  name: "Panda Spawn Egg"
   recipe:
     - BAMBOO BAMBOO BAMBOO
-    - BAMBOO EGG BAMBOO
+    - BAMBOO CLOCK BAMBOO
     - BAMBOO BAMBOO BAMBOO
   material: PANDA_SPAWN_EGG
 
 ParrotSpawnEgg:
-  name: "Parrot Spawn Egg"
   recipe:
     - FEATHER FEATHER FEATHER
-    - FEATHER EGG FEATHER
+    - FEATHER CLOCK FEATHER
     - FEATHER FEATHER FEATHER
   material: PARROT_SPAWN_EGG
 
 PhantomSpawnEgg:
-  name: "Phantom Spawn Egg"
   recipe:
     - PHANTOM_MEMBRANE PHANTOM_MEMBRANE PHANTOM_MEMBRANE
-    - PHANTOM_MEMBRANE EGG PHANTOM_MEMBRANE
+    - PHANTOM_MEMBRANE CLOCK PHANTOM_MEMBRANE
     - PHANTOM_MEMBRANE PHANTOM_MEMBRANE PHANTOM_MEMBRANE
   material: PHANTOM_SPAWN_EGG
 
 PigSpawnEgg:
-  name: "Pig Spawn Egg"
   recipe:
     - PORKCHOP PORKCHOP PORKCHOP
-    - PORKCHOP EGG PORKCHOP
+    - PORKCHOP CLOCK PORKCHOP
     - PORKCHOP PORKCHOP PORKCHOP
   material: PIG_SPAWN_EGG
 
 PillagerSpawnEgg:
-  name: "Pillager Spawn Egg"
   recipe:
     - CROSSBOW CROSSBOW CROSSBOW
-    - CROSSBOW EGG CROSSBOW
+    - CROSSBOW CLOCK CROSSBOW
     - CROSSBOW CROSSBOW CROSSBOW
   material: PILLAGER_SPAWN_EGG
 
 PufferfishSpawnEgg:
-  name: "Pufferfish Spawn Egg"
   recipe:
     - PUFFERFISH PUFFERFISH PUFFERFISH
-    - PUFFERFISH EGG PUFFERFISH
+    - PUFFERFISH CLOCK PUFFERFISH
     - PUFFERFISH PUFFERFISH PUFFERFISH
   material: PUFFERFISH_SPAWN_EGG
 
 RabbitSpawnEgg:
-  name: "Rabbit Spawn Egg"
   recipe:
     - RABBIT RABBIT RABBIT
-    - RABBIT EGG RABBIT
+    - RABBIT CLOCK RABBIT
     - RABBIT RABBIT RABBIT
   material: RABBIT_SPAWN_EGG
 
 RavagerSpawnEgg:
-  name: "Ravager Spawn Egg"
   recipe:
     - SADDLE SADDLE SADDLE
-    - SADDLE EGG SADDLE
+    - SADDLE CLOCK SADDLE
     - SADDLE SADDLE SADDLE
   material: RAVAGER_SPAWN_EGG
 
 SalmonSpawnEgg:
-  name: "Salmon Spawn Egg"
   recipe:
     - SALMON SALMON SALMON
-    - SALMON EGG SALMON
+    - SALMON CLOCK SALMON
     - SALMON SALMON SALMON
   material: SALMON_SPAWN_EGG
 
 SheepSpawnEgg:
-  name: "Sheep Spawn Egg"
   recipe:
     - MUTTON MUTTON MUTTON
-    - MUTTON EGG MUTTON
+    - MUTTON CLOCK MUTTON
     - MUTTON MUTTON MUTTON
   material: SHEEP_SPAWN_EGG
 
 ShulkerSpawnEgg:
-  name: "Shulker Spawn Egg"
   recipe:
     - SHULKER_SHELL SHULKER_SHELL SHULKER_SHELL
-    - SHULKER_SHELL EGG SHULKER_SHELL
+    - SHULKER_SHELL CLOCK SHULKER_SHELL
     - SHULKER_SHELL SHULKER_SHELL SHULKER_SHELL
   material: SHULKER_SPAWN_EGG
 
 SkeletonSpawnEgg:
-  name: "Skeleton Spawn Egg"
   recipe:
     - BONE BONE BONE
-    - BONE EGG BONE
+    - BONE CLOCK BONE
     - BONE BONE BONE
   material: SKELETON_SPAWN_EGG
 
 SlimeSpawnEgg:
-  name: "Slime Spawn Egg"
   recipe:
     - SLIME_BALL SLIME_BALL SLIME_BALL
-    - SLIME_BALL EGG SLIME_BALL
+    - SLIME_BALL CLOCK SLIME_BALL
     - SLIME_BALL SLIME_BALL SLIME_BALL
   material: SLIME_SPAWN_EGG
 
 SpiderSpawnEgg:
-  name: "Spider Spawn Egg"
   recipe:
     - SPIDER_EYE SPIDER_EYE SPIDER_EYE
-    - SPIDER_EYE EGG SPIDER_EYE
+    - SPIDER_EYE CLOCK SPIDER_EYE
     - SPIDER_EYE SPIDER_EYE SPIDER_EYE
   material: SPIDER_SPAWN_EGG
 
 SquidSpawnEgg:
-  name: "Squid Spawn Egg"
   recipe:
     - INK_SAC INK_SAC INK_SAC
-    - INK_SAC EGG INK_SAC
+    - INK_SAC CLOCK INK_SAC
     - INK_SAC INK_SAC INK_SAC
   material: SQUID_SPAWN_EGG
 
 TropicalFishSpawnEgg:
-  name: "Tropical Fish Spawn Egg"
   recipe:
     - TROPICAL_FISH TROPICAL_FISH TROPICAL_FISH
-    - TROPICAL_FISH EGG TROPICAL_FISH
+    - TROPICAL_FISH CLOCK TROPICAL_FISH
     - TROPICAL_FISH TROPICAL_FISH TROPICAL_FISH
   material: TROPICAL_FISH_SPAWN_EGG
 
 TurtleSpawnEgg:
-  name: "Turtle Spawn Egg"
   recipe:
     - TURTLE_SCUTE TURTLE_SCUTE TURTLE_SCUTE
-    - TURTLE_SCUTE EGG TURTLE_SCUTE
+    - TURTLE_SCUTE CLOCK TURTLE_SCUTE
     - TURTLE_SCUTE TURTLE_SCUTE TURTLE_SCUTE
   material: TURTLE_SPAWN_EGG
 
 VindicatorSpawnEgg:
-  name: "Vindicator Spawn Egg"
   recipe:
     - IRON_AXE IRON_AXE IRON_AXE
-    - IRON_AXE EGG IRON_AXE
+    - IRON_AXE CLOCK IRON_AXE
     - IRON_AXE IRON_AXE IRON_AXE
   material: VINDICATOR_SPAWN_EGG
 
-WitherSkeletonSpawnEgg:
-  name: "Wither Skeleton Spawn Egg"
-  recipe:
-    - WITHER_SKELETON_SKULL WITHER_SKELETON_SKULL WITHER_SKELETON_SKULL
-    - WITHER_SKELETON_SKULL EGG WITHER_SKELETON_SKULL
-    - WITHER_SKELETON_SKULL WITHER_SKELETON_SKULL WITHER_SKELETON_SKULL
-  material: WITHER_SKELETON_SPAWN_EGG
-
 WardenSpawnEgg:
-  name: "Warden Spawn Egg"
   recipe:
     - SCULK_CATALYST SCULK_CATALYST SCULK_CATALYST
-    - SCULK_CATALYST EGG SCULK_CATALYST
+    - SCULK_CATALYST CLOCK SCULK_CATALYST
     - SCULK_CATALYST SCULK_CATALYST SCULK_CATALYST
   material: WARDEN_SPAWN_EGG
 
+WitherSkeletonSpawnEgg:
+  recipe:
+    - WITHER_SKELETON_SKULL WITHER_SKELETON_SKULL WITHER_SKELETON_SKULL
+    - WITHER_SKELETON_SKULL CLOCK WITHER_SKELETON_SKULL
+    - WITHER_SKELETON_SKULL WITHER_SKELETON_SKULL WITHER_SKELETON_SKULL
+  material: WITHER_SKELETON_SPAWN_EGG
+
 ZombieSpawnEgg:
-  name: "Zombie Spawn Egg"
   recipe:
     - ROTTEN_FLESH ROTTEN_FLESH ROTTEN_FLESH
-    - ROTTEN_FLESH EGG ROTTEN_FLESH
+    - ROTTEN_FLESH CLOCK ROTTEN_FLESH
     - ROTTEN_FLESH ROTTEN_FLESH ROTTEN_FLESH
   material: ZOMBIE_SPAWN_EGG
 
-Cobblestone:
-  name: "Cobblestone"
-  recipe:
-    - BONE BONE BONE
-    - BONE BONE BONE
-    - BONE BONE BONE
-  material: COBBLESTONE
-
 Sponge:
-  name: "Sponge"
   recipe:
     - SAND SAND SAND
     - SAND NETHER_STAR SAND
@@ -394,25 +342,7 @@ Sponge:
   material: SPONGE
   amount: 8
 
-Stick:
-  name: "Stick"
-  recipe:
-    - ARROW ARROW ARROW
-    - ARROW ARROW ARROW
-    - ARROW ARROW ARROW
-  material: STICK
-
-String:
-  name: "String"
-  recipe:
-    - BOW BOW BOW
-    - BOW BOW BOW
-    - BOW BOW BOW
-  material: STRING
-  amount: 7
-
 Prismarine:
-  name: "Prismarine"
   recipe:
     - COBBLESTONE COBBLESTONE COBBLESTONE
     - COBBLESTONE DIAMOND COBBLESTONE

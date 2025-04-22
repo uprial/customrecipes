@@ -18,6 +18,9 @@ Then, add the recipe key definition to the end of the config file:
 
     PandaSpawnEgg:
       name: "Panda Spawn Egg"
+      description:
+        - "Panda spawns from"
+        - "this egg!"
       recipe:
         - BAMBOO BAMBOO BAMBOO
         - BAMBOO EGG BAMBOO
@@ -45,8 +48,8 @@ Then, add the recipe key definition to the end of the config file:
 ![Panda](https://raw.githubusercontent.com/uprial/customrecipes/master/images/panda_spawn_egg.png)
 ![Parrot](https://raw.githubusercontent.com/uprial/customrecipes/master/images/parrot_spawn_egg.png)
 ![Phantom](https://raw.githubusercontent.com/uprial/customrecipes/master/images/phantom_spawn_egg.png)
-![Pillager](https://raw.githubusercontent.com/uprial/customrecipes/master/images/pillager_spawn_egg.png)
 ![Pig](https://raw.githubusercontent.com/uprial/customrecipes/master/images/pig_spawn_egg.png)
+![Pillager](https://raw.githubusercontent.com/uprial/customrecipes/master/images/pillager_spawn_egg.png)
 ![Pufferfish](https://raw.githubusercontent.com/uprial/customrecipes/master/images/pufferfish_spawn_egg.png)
 ![Rabbit](https://raw.githubusercontent.com/uprial/customrecipes/master/images/rabbit_spawn_egg.png)
 ![Ravager](https://raw.githubusercontent.com/uprial/customrecipes/master/images/ravager_spawn_egg.png)
@@ -65,10 +68,7 @@ Then, add the recipe key definition to the end of the config file:
 ![Zombie](https://raw.githubusercontent.com/uprial/customrecipes/master/images/zombie_spawn_egg.png)
 
 ### Existing Other Recipes
-![Cobblestone](https://raw.githubusercontent.com/uprial/customrecipes/master/images/cobblestone.png)
 ![Sponge](https://raw.githubusercontent.com/uprial/customrecipes/master/images/sponge.png)
-![Stick](https://raw.githubusercontent.com/uprial/customrecipes/master/images/stick.png)
-![String](https://raw.githubusercontent.com/uprial/customrecipes/master/images/string.png)
 ![Prismarine](https://raw.githubusercontent.com/uprial/customrecipes/master/images/prismarine.png)
 
 ## Commands

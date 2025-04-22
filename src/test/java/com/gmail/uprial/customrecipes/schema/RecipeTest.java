@@ -24,22 +24,22 @@ public class RecipeTest extends TestConfigBase {
 
     @Test
     public void testNullName() throws Exception {
-        e.expect(InvalidConfigException.class);
-        e.expectMessage("Null name of recipe-key 'r'");
+        e.expect(RuntimeException.class);
+        e.expectMessage("Empty name of recipe 'r'. Use default value NULL");
         getFromConfig(getPreparedConfig(
                         "r:",
                         " z: y"),
-                getCustomLogger(), "r");
+                getDebugFearingCustomLogger(), "r");
     }
 
     @Test
     public void testEmptyName() throws Exception {
-        e.expect(InvalidConfigException.class);
-        e.expectMessage("Null name of recipe-key 'r'");
+        e.expect(RuntimeException.class);
+        e.expectMessage("Empty name of recipe 'r'. Use default value NULL");
         getFromConfig(getPreparedConfig(
                         "r:",
                         " name: "),
-                getCustomLogger(), "r");
+                getDebugFearingCustomLogger(), "r");
     }
 
     @Test

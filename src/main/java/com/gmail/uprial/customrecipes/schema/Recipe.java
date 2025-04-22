@@ -66,8 +66,15 @@ public final class Recipe {
         if(config.getConfigurationSection(key) == null) {
             throw new InvalidConfigException(String.format("Null definition of recipe-key '%s'", key));
         }
-        String name = ConfigReaderSimple.getString(config,key + ".name",
-                String.format("name of recipe-key '%s'", key));
+
+        String name;
+        if(config.getString(key + ".name") == null) {
+            name = null;
+            customLogger.debug(String.format("Empty name of recipe '%s'. Use default value NULL", key));
+        } else {
+            name = ConfigReaderSimple.getString(config, key + ".name",
+                    String.format("name of recipe '%s'", key));
+        }
         List<String> description = ConfigReaderSimple.getStringList(config, customLogger,
                 key + ".description", String.format("description of recipe '%s'", key));;
         RecipeRecipe recipe = RecipeRecipe.getFromConfig(config, key + ".recipe",
@@ -87,8 +94,9 @@ public final class Recipe {
         if(description != null) {
             meta.setLore(description);
         }
-
-        meta.setDisplayName(name);
+        if(name != null) {
+            meta.setDisplayName(name);
+        }
         result.setItemMeta(meta);
         result.setAmount(amount);
 

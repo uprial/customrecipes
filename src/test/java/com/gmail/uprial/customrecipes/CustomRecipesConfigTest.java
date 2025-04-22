@@ -94,29 +94,6 @@ public class CustomRecipesConfigTest extends TestConfigBase {
     }
 
     @Test
-    public void testDuplicateNameInEnabledRecipesWithDifferentCase() throws Exception {
-        e.expect(InvalidConfigException.class);
-        e.expectMessage("Name 'test' of recipes-key 'y' is not unique");
-        loadConfig("enabled-recipes:",
-                " - x",
-                " - y",
-                "x:",
-                " name: test",
-                " recipe:",
-                "  - EGG EGG EGG",
-                "  - EGG EGG EGG",
-                "  - EGG EGG EGG",
-                " material: PIG_SPAWN_EGG",
-                "y:",
-                " name: test",
-                " recipe:",
-                "  - EGG EGG EGG",
-                "  - EGG EGG EGG",
-                "  - EGG EGG EGG",
-                " material: PIG_SPAWN_EGG");
-    }
-
-    @Test
     public void testNormalConfig() throws Exception {
         assertEquals(
                 "recipes: [PIG_SPAWN_EGG~'test'=[EGG,EGG,EGG,EGG,EGG,EGG,EGG,EGG,EGG]]",

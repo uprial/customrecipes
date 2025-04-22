@@ -3,14 +3,16 @@ package com.gmail.uprial.customrecipes;
 import com.gmail.uprial.customrecipes.common.CustomLogger;
 import com.gmail.uprial.customrecipes.config.InvalidConfigException;
 import com.gmail.uprial.customrecipes.schema.Recipe;
+import org.bukkit.NamespacedKey;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
-import java.util.Iterator;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import static com.gmail.uprial.customrecipes.CustomRecipesCommandExecutor.COMMAND_NS;
 
@@ -20,6 +22,8 @@ public final class CustomRecipes extends JavaPlugin {
 
     private CustomLogger consoleLogger = null;
     private CustomRecipesConfig customRecipesConfig = null;
+
+    private final Set<NamespacedKey> addedKeys = new HashSet<>();
 
     @Override
     public void onEnable() {
@@ -32,10 +36,6 @@ public final class CustomRecipes extends JavaPlugin {
 
         getCommand(COMMAND_NS).setExecutor(new CustomRecipesCommandExecutor(this));
         consoleLogger.info("Plugin enabled");
-    }
-
-    public CustomRecipesConfig getCustomRecipesConfig() {
-        return customRecipesConfig;
     }
 
     void reloadConfig(CustomLogger userLogger) {
@@ -61,23 +61,19 @@ public final class CustomRecipes extends JavaPlugin {
     private void loadRecipes() {
         List<Recipe> recipes = customRecipesConfig.getRecipes();
         for(Recipe recipe : recipes) {
-            ShapedRecipe shapedRecipe = recipe.getShapedRecipe(this);
+            final ShapedRecipe shapedRecipe = recipe.getShapedRecipe(this);
             getServer().addRecipe(shapedRecipe);
-            consoleLogger.info("Added " + recipe);
+            addedKeys.add(shapedRecipe.getKey());
         }
     }
 
     private void unloadRecipe() {
-        Iterator<org.bukkit.inventory.Recipe> iterator = getServer().recipeIterator();
-        while (iterator.hasNext()) {
-            org.bukkit.inventory.Recipe bukkitRecipe = iterator.next();
-            Recipe recipe = customRecipesConfig.searchRecipeByItemStack(bukkitRecipe.getResult());
-            if(recipe != null) {
-                iterator.remove();
-                consoleLogger.info("Removed " + recipe);
-            }
+        for(NamespacedKey key : addedKeys) {
+            getServer().removeRecipe(key);
         }
+        addedKeys.clear();
     }
+
     @Override
     public FileConfiguration getConfig() {
         return YamlConfiguration.loadConfiguration(configFile);
