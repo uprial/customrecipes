@@ -10,25 +10,23 @@ A Minecraft (Bukkit) plugin that allows to create your own fully customizable re
 
 ## Features
 
-The whole idea of this plugin is that YOU can add a recipe you want. For instance, to add a recipe for panda spawn egg from an egg and bamboos, you can modify the config.yaml file.
+The whole idea of this plugin is that YOU can add a recipe you want.
 
-At first, add a recipe key "PandaSpawnEgg" to the "enabled-recipes" config section. You may choose any name you want for the recipe key, that is not yet present in the config file.
+For instance, to add a recipe for spawner, you can modify the config.yaml file.
+
+At first, add a recipe key "Spawner" to the "enabled-recipes" config section. You may choose any name you want for the recipe key, that is not yet present in the config file.
 
 Then, add the recipe key definition to the end of the config file:
 
-    PandaSpawnEgg:
-      name: "Panda Spawn Egg"
-      description:
-        - "Panda spawns from"
-        - "this egg!"
+    Spawner:
       recipe:
-        - BAMBOO BAMBOO BAMBOO
-        - BAMBOO EGG BAMBOO
-        - BAMBOO BAMBOO BAMBOO
-      material: PANDA_SPAWN_EGG
+        - PORKCHOP CLOCK PORKCHOP
+        - CLOCK DIAMOND_BLOCK CLOCK
+        - IRON_BLOCK CLOCK IRON_BLOCK
+      material: SPAWNER
 
-### Existing Pig Spawner Recipe
-![Pig Spawner](https://raw.githubusercontent.com/uprial/customrecipes/master/images/pig_spawner.png)
+The recipe will look like:
+![Spawner](https://raw.githubusercontent.com/uprial/customrecipes/master/images/spawner.png)
 
 ### Existing Spawn Eggs Recipes
 ![Armadillo](https://raw.githubusercontent.com/uprial/customrecipes/master/images/armadillo_spawn_egg.png)

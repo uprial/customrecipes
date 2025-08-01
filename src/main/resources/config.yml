@@ -23,8 +23,6 @@ debug: false
 # ...
 # <recipe-keyN>
 enabled-recipes:
-  - PigSpawner
-
   - ArmadilloSpawnEgg
   - BeeSpawnEgg
   - BlazeSpawnEgg
@@ -61,9 +59,6 @@ enabled-recipes:
   - WitherSkeletonSpawnEgg
   - ZombieSpawnEgg
 
-  - Sponge
-  - Prismarine
-
 #
 # ==== Recipes definition ====
 # Example:
@@ -81,13 +76,6 @@ enabled-recipes:
 #   item: ### target item in recipe result
 #   amount: <1..64> ### target amount of items in recipe result (default = 1)
 #
-
-PigSpawner:
-  recipe:
-    - PORKCHOP CLOCK PORKCHOP
-    - CLOCK DIAMOND_BLOCK CLOCK
-    - IRON_BLOCK CLOCK IRON_BLOCK
-  material: SPAWNER
 
 ArmadilloSpawnEgg:
   recipe:
@@ -333,20 +321,3 @@ ZombieSpawnEgg:
     - ROTTEN_FLESH CLOCK ROTTEN_FLESH
     - ROTTEN_FLESH ROTTEN_FLESH ROTTEN_FLESH
   material: ZOMBIE_SPAWN_EGG
-
-Sponge:
-  recipe:
-    - SAND SAND SAND
-    - SAND NETHER_STAR SAND
-    - SAND SAND SAND
-  material: SPONGE
-  amount: 8
-
-Prismarine:
-  recipe:
-    - COBBLESTONE COBBLESTONE COBBLESTONE
-    - COBBLESTONE DIAMOND COBBLESTONE
-    - COBBLESTONE COBBLESTONE COBBLESTONE
-  material: PRISMARINE
-  amount: 8
-
