@@ -14,7 +14,12 @@ The whole idea of this plugin is that YOU can add a recipe you want.
 
 For instance, to add a recipe for spawner, you can modify the config.yaml file.
 
-At first, add a recipe key "Spawner" to the "enabled-recipes" config section. You may choose any name you want for the recipe key, that is not yet present in the config file.
+At first, add a recipe key "Spawner" to the "enabled-recipes" config section:
+
+    enabled-recipes:
+    - Spawner
+
+You may choose any name you want for the recipe key, that is not yet present in the config file.
 
 Then, add the recipe key definition to the end of the config file:
 
