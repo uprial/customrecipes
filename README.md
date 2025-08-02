@@ -65,10 +65,6 @@ The recipe will look like:
 ![Wither Skeleton](https://raw.githubusercontent.com/uprial/customrecipes/master/images/wither_skeleton_spawn_egg.png)
 ![Zombie](https://raw.githubusercontent.com/uprial/customrecipes/master/images/zombie_spawn_egg.png)
 
-### Existing Other Recipes
-![Sponge](https://raw.githubusercontent.com/uprial/customrecipes/master/images/sponge.png)
-![Prismarine](https://raw.githubusercontent.com/uprial/customrecipes/master/images/prismarine.png)
-
 ## Commands
 
 `customrecipes reload` - reload config from disk
