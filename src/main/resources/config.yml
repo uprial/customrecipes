@@ -36,6 +36,7 @@ enabled-recipes:
   - EvokerSpawnEgg
   - GhastSpawnEgg
   - GlowSquidSpawnEgg
+  - GuardianSpawnEgg
   - MagmaCubeSpawnEgg
   - PandaSpawnEgg
   - ParrotSpawnEgg
@@ -168,6 +169,13 @@ GlowSquidSpawnEgg:
     - GLOW_INK_SAC GLOW_INK_SAC GLOW_INK_SAC
   material: GLOW_SQUID_SPAWN_EGG
 
+GuardianSpawnEgg:
+  recipe:
+    - PRISMARINE_SHARD PRISMARINE_SHARD PRISMARINE_SHARD
+    - PRISMARINE_SHARD CLOCK PRISMARINE_SHARD
+    - PRISMARINE_SHARD PRISMARINE_SHARD PRISMARINE_SHARD
+  material: GUARDIAN_SPAWN_EGG
+
 MagmaCubeSpawnEgg:
   recipe:
     - MAGMA_CREAM MAGMA_CREAM MAGMA_CREAM
@@ -205,9 +213,9 @@ PigSpawnEgg:
 
 PillagerSpawnEgg:
   recipe:
-    - CROSSBOW CROSSBOW CROSSBOW
-    - CROSSBOW CLOCK CROSSBOW
-    - CROSSBOW CROSSBOW CROSSBOW
+    - OMINOUS_BOTTLE OMINOUS_BOTTLE OMINOUS_BOTTLE
+    - OMINOUS_BOTTLE CLOCK OMINOUS_BOTTLE
+    - OMINOUS_BOTTLE OMINOUS_BOTTLE OMINOUS_BOTTLE
   material: PILLAGER_SPAWN_EGG
 
 PufferfishSpawnEgg:
@@ -296,9 +304,9 @@ TurtleSpawnEgg:
 
 VindicatorSpawnEgg:
   recipe:
-    - IRON_AXE IRON_AXE IRON_AXE
-    - IRON_AXE CLOCK IRON_AXE
-    - IRON_AXE IRON_AXE IRON_AXE
+    - EMERALD EMERALD EMERALD
+    - EMERALD CLOCK EMERALD
+    - EMERALD EMERALD EMERALD
   material: VINDICATOR_SPAWN_EGG
 
 WardenSpawnEgg:
